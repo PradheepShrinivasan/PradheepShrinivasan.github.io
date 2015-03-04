@@ -2,6 +2,7 @@
 <html lang="en-us">
 
   {% include head.html %}
+  {% include googleAnalytics.html %}
 
 <body class="theme-base-08 layout-reverse sidebar-overlay">
     {% include sidebar.html %}
@@ -20,6 +21,7 @@
 
       <div class="container content">
         {{ content }}
+  	{% include comments.html %}
       </div>
     </div>
 
@@ -42,7 +44,5 @@
         }, false);
       })(document);
     </script>
-  {% include comments.html %}
-
   </body>
 </html>
