@@ -52,4 +52,3 @@ git clone git://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git
 and the entire linux-next was cloned to my PC :-)
 
 Now off to doing some trivial patches so i can get my name in the linux kernel.
-
