@@ -15,3 +15,8 @@ This page contains the list of all the links which i find useful.
 2. [Virtual box](https://www.virtualbox.org/) is the only free virtual machine manager available for mac. I love it :).
 3. Resizing the virtual disks is very common as you could run out of space or as we make a mistake. Now worries this [blog](http://trivialproof.blogspot.ca/2011/01/resizing-virtualbox-virtual-hard-disk.html) gives you a step by step instructions of how to do it.
 
+
+## Jekyll
+
+1. Getting comments, Analytics,  working with jekyll [here](http://joshualande.com/jekyll-github-pages-poole/)
+2. The blog markup of jekyll is redcarpet that git also uses. So all markup can be found in git site [here] (https://help.github.com/articles/github-flavored-markdown/) 
