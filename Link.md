@@ -19,4 +19,15 @@ This page contains the list of all the links which i find useful.
 ## Jekyll
 
 1. Getting comments, Analytics,  working with jekyll [here](http://joshualande.com/jekyll-github-pages-poole/)
-2. The blog markup of jekyll is redcarpet that git also uses. So all markup can be found in git site [here] (https://help.github.com/articles/github-flavored-markdown/) 
+2. The blog markup of jekyll is redcarpet that git also uses. So all markup can be found in git site [here] (https://help.github.com/articles/github-flavored-markdown/)
+
+##Git 
+
+###Learning git
+1. Udacity has a good course on getting started with git 
+2. If you want to become an expert with handson excercises by using git look [here] ()
+
+
+### Configuring git
+1. I used this configuration from the udacity to configure git [Link] (https://www.udacity.com/course/viewer#!/c-ud775/l-2980038599/m-3341718587)
+ 
