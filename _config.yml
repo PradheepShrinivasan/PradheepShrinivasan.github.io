@@ -14,7 +14,7 @@ tagline:             'Random Experiments'
 description:          This blog will be my notepad of things i learn , new programming language, tools , compilers etc.This blog is more of my penesive to see how much my understanding of things have evolved.
 url:                 http://pradheepshrinivasan.github.io/
 baseurl:             /
-paginate:            5
+paginate:            3
 
 # About/contact
 author:
