@@ -14,7 +14,7 @@ This page contains the list of all the links which i find useful.
 1. My favourite virtual machine manager for windows is [vmware player](http://www.vmware.com/products/player). Its must if you are going to try linux or any other operating system.
 2. [Virtual box](https://www.virtualbox.org/) is the only free virtual machine manager available for mac. I love it :).
 3. Resizing the virtual disks is very common as you could run out of space or as we make a mistake. Now worries this [blog](http://trivialproof.blogspot.ca/2011/01/resizing-virtualbox-virtual-hard-disk.html) gives you a step by step instructions of how to do it.
-
+4. The best guide to learning about time keeping in VM read [here](http://www.vmware.com/files/pdf/Timekeeping-In-VirtualMachines.pdf)
 
 ## Jekyll
 
@@ -30,4 +30,7 @@ This page contains the list of all the links which i find useful.
 
 ### Configuring git
 1. I used this configuration from the udacity to configure git [Link] (https://www.udacity.com/course/viewer#!/c-ud775/l-2980038599/m-3341718587)
- 
+
+## Performance 
+
+1.Single reader single write queue optimization [here](https://skillsmatter.com/skillscasts/6163-high-performance-single-producer-single-consumer-in-memory-queue)

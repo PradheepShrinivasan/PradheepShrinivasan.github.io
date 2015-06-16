@@ -3,6 +3,7 @@ layout: post
 title: " TypeError: 'int' object is not iterable"
 published: true
 comments: true
+tags : python static-typing dynamic-typing
 ---
 Recently i started to learn python. For a long time, i wanted to learn a scripting language. i thought i would learn python by solving [spoj](http://www.spoj.com/) problems.spoj is a site that has a set of programming problems and one can write code in any language to solve it.On solving the problem ,the solution is submitted to a spoj server and is evaluated for its correctness by running it across a set of test cases.Its good site to get used to solving programming problems.
 
