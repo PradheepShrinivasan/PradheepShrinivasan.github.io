@@ -1,3 +1,6 @@
-This is my blog based on Jekyll(http://jekyllrb.com/) with Lanyon theme (https://github.com/poole/lanyon).
+This is repository that creates my blog http://pradheepshrinivasan.github.io/.
 
-Thanks guys for the awesome work.My blog is now more personalized.
+Its based on based on awesome Jekyll(http://jekyllrb.com/) with Lanyon theme (https://github.com/poole/lanyon).
+
+
+
