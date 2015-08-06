@@ -1,5 +1,5 @@
 ---
-layout: /Volumes/Pradheep Exploration/Blog/PradheepShrinivasan.github.io/_posts
+layout: post
 title: Sending mails through git ends up in spam folder
 categories: []
 tags: []
