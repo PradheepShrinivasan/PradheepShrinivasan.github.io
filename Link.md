@@ -8,7 +8,6 @@ This page contains the list of all the links which i find useful.
 
 1. The Kernel building from the source  and learn it from scratch the best page to look forward is [crashcourse.ca] (http://www.crashcourse.ca/introduction-linux-kernel-programming/lesson-1-building-and-running-new-linux-kernel). 
 
-
 ## Virtual Machines
 
 1. My favourite virtual machine manager for windows is [vmware player](http://www.vmware.com/products/player). Its must if you are going to try linux or any other operating system.
@@ -34,3 +33,10 @@ This page contains the list of all the links which i find useful.
 ## Performance 
 
 1.Single reader single write queue optimization [here](https://skillsmatter.com/skillscasts/6163-high-performance-single-producer-single-consumer-in-memory-queue)
+
+## MAC
+
+1.if you are new to make and finder that the finder is lacking in options compared to that of the windows like creating a new file. This is a must but hey apple thinks its not needed. So the easiest way is to use an application called [xtrafinder](http://www.trankynam.com/xtrafinder/).Its cool as it allows you to create tabs in finder, your own shortcuts and so on. Just  try it out.
+
+2.Similar to the package management software in linux distributions like apt,rpm which helps to install all open source packages, the macos equivalent is [brew](http://brew.sh/). Its a must if you are a developer of unix.
+
