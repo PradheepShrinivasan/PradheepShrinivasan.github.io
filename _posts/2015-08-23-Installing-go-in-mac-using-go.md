@@ -71,7 +71,7 @@ export PATH=$PATH:$GOROOT/bin
 
 You can of course change the GOPATH to any of your project specific workspace.Just update the corresponding path in your folder you are interested.
 
-Just make sure that there is no space in the folder path as i find it causes too much problem :(
+Just make sure that there is no space in the folder path as i find it causes too much problem :(. The easier way to get around is by soft linking the destination path to the one which has no space :)
 
 
 I found the above solution in this [gist](https://gist.github.com/vsouza/77e6b20520d07652ed7d)
