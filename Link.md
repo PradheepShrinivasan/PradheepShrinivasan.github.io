@@ -40,3 +40,7 @@ This page contains the list of all the links which i find useful.
 
 2.Similar to the package management software in linux distributions like apt,rpm which helps to install all open source packages, the macos equivalent is [brew](http://brew.sh/). Its a must if you are a developer of unix.
 
+## Database
+
+If you are one of the few who loves how databases work and debunk their claim of their product look at this [blog](https://aphyr.com/)
+
