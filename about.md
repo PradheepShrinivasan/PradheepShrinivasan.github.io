@@ -3,8 +3,9 @@ layout: page
 title: About
 ---
 
-This is Pradheep and i love programming especially c/c++ in linux and system programming. I love loads of embedded programming and good amount of hardware too.I have spent all my engineering time in learning/loving embeded.Learnt a lot and it will start uploading my projects in the the page soon.
+I am Pradheep, a software engineer , a system programmer with most of my work experience in c/c++ and linux. I consider myself as a software generalist always looking for challening problems in system design, architecture and optimization.I have bachelor degree in Electronics and comunication and spent my entire time in working in embedded systems. My interest includes 8051/52, AVR micro controllers and linux kernel.
 
-I am hoping i will start blogging regularly and learn a lot too in the process.
+Currently i am learning go with mongodb to write a small mail server.You can find more about me in this blog and my resume over in [linkedin](https://www.linkedin.com/in/pradheepshrinivasan)
+
 
 

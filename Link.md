@@ -44,3 +44,8 @@ This page contains the list of all the links which i find useful.
 
 If you are one of the few who loves how databases work and debunk their claim of their product look at this [blog](https://aphyr.com/)
 
+
+#Go tools
+
+1. Using gofmt tool in [sublime](http://blog.campoy.cat/2013/12/integrating-goimports-with-gosublime-on.html)
+2. Pythia for source code analysis [here](https://github.com/fzipp/pythia) 
