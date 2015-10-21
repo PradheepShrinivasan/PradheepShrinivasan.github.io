@@ -49,3 +49,10 @@ If you are one of the few who loves how databases work and debunk their claim of
 
 1. Using gofmt tool in [sublime](http://blog.campoy.cat/2013/12/integrating-goimports-with-gosublime-on.html)
 2. Pythia for source code analysis [here](https://github.com/fzipp/pythia) 
+
+#Python
+
+If you are interested in improving the performance of python , check out this [video](https://www.youtube.com/watch?t=2909&v=OSGv2VnC0go)
+
+#misc
+https://docs.google.com/presentation/d/10ft0zAf2yUMkAL2ZpyUy7EbK0JEmX9dbw6cgYJqNiLk/edit?usp=sharing

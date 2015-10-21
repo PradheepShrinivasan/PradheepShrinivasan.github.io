@@ -11,7 +11,7 @@ To learn mongodb i thought i would try to think of a simple use case in mongodb,
 
  The entity relationship of a simple mail client is as below 
 
-![Entity relationship diagram] ( /images/simple_mail_ER.jpeg) 
+![Entity relationship diagram]( /images/simple_mail_ER.jpeg) 
 
 The next step is to convert this entity and relationship into set of tables, columns and row or in mongodb terms set of collections and documents.
 
