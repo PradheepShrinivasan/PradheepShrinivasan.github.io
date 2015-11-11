@@ -38,7 +38,7 @@ This page contains the list of all the links which i find useful.
 
 1.if you are new to make and finder that the finder is lacking in options compared to that of the windows like creating a new file. This is a must but hey apple thinks its not needed. So the easiest way is to use an application called [xtrafinder](http://www.trankynam.com/xtrafinder/).Its cool as it allows you to create tabs in finder, your own shortcuts and so on. Just  try it out.
 
-2.Similar to the package management software in linux distributions like apt,rpm which helps to install all open source packages, the macos equivalent is [brew](http://brew.sh/). Its a must if you are a developer of unix.
+2.Similar to the package management software in linux distributions like apt,rpm which helps to install all open source packages, the mac's equivalent is [brew](http://brew.sh/). Its a must if you are a developer of unix.
 
 ## Database
 
@@ -56,3 +56,7 @@ If you are interested in improving the performance of python , check out this [v
 
 #misc
 https://docs.google.com/presentation/d/10ft0zAf2yUMkAL2ZpyUy7EbK0JEmX9dbw6cgYJqNiLk/edit?usp=sharing
+
+#openstack
+Getting started with openstack
+https://www.openstack.org/summit/vancouver-2015/summit-videos/presentation/7-habits-of-highly-effective-contributors
