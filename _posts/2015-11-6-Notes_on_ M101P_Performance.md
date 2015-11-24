@@ -18,8 +18,10 @@ The following are the notes on mongodb Lecture 4
 
 5. Index as in any database can be used in mongodb to improve performance of query.Of course there is overhead in space and write operation as there is a index that needs to be updated every time.
 
-        db.collection.createIndex({scores:1}, {unique:true}) // creates index in ascending order
+```
 
+        db.collection.createIndex({scores:1}, {unique:true}) // creates index in ascending order
+```
 
     a. unique is optional and is used to guarantee the uniqueness and throw an error when we try to insert something wrong.
 
