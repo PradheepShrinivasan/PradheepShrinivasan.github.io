@@ -63,62 +63,62 @@ With this the entire setup basic setup of our system is done.
 
 1. Create folders for application 
 
-```
-    mkdir app app/static app/template tmp
-```
+    ```
+        mkdir app app/static app/template tmp
+    ```
 2. create an ``` app/__init__.py ``` file with the following contents
 
-```
-    from flask import Flask
+    ```
+        from flask import Flask
 
-    app = Flask(__name__)
-    from app import views
-```
+        app = Flask(__name__)
+        from app import views
+    ```
 
 3. create a view file in ``` app/view.py ```
 
-```
-from app import app
+    ```
+    from app import app
 
-@app.route('/')
-@app.route('/index')
-def index():
-    return "URL Shortener"
-```
+    @app.route('/')
+    @app.route('/index')
+    def index():
+        return "URL Shortener"
+    ```
 
 4. Now to start the application, we create  ``` run.py  ``` which starts our application
 
-```
-    #!flask/bin/python
-    from app import app
-    app.run(debug=True)
-```
+    ```
+        #!flask/bin/python
+        from app import app
+        app.run(debug=True)
+    ```
 
 5. The directory structure of application is as follows
 
-```
-$tree  ./ -l 2
-./
-├── LICENSE
-├── app
-│   ├── __init__.py
-│   ├── static
-│   ├── template
-│   ├── views.py
-│   └── views.pyc
-├── run.py
-├── tmp
-└── venv
-```
+    ```
+    $tree  ./ -l 2
+    ./
+    ├── LICENSE
+    ├── app
+    │   ├── __init__.py
+    │   ├── static
+    │   ├── template
+    │   ├── views.py
+    │   └── views.pyc
+    ├── run.py
+    ├── tmp
+    └── venv
+    ```
 
 6. Now run the application using the following  command 
 
-```
-    $ python run.py 
-     * Restarting with stat
-     * Debugger is active!
-     * Debugger pin code: 163-315-710
-```
+    ```
+        $ python run.py 
+         * Restarting with stat
+         * Debugger is active!
+         * Debugger pin code: 163-315-710
+    ```
 
 7. Go to a web browser and look up `http://localhost:5000` and you will be able to will see " URL Shortener!"
 
@@ -131,43 +131,43 @@ $tree  ./ -l 2
 
 2. Create add a remote of 
 
-```
-    $ heroku create
-    Creating enigmatic-temple-7361... done, stack is cedar-14
-    https://enigmatic-temple-7361.herokuapp.com/ | https://git.heroku.com/enigmatic-temple-7361.git
-    Git remote heroku added
-```
+    ```
+        $ heroku create
+        Creating enigmatic-temple-7361... done, stack is cedar-14
+        https://enigmatic-temple-7361.herokuapp.com/ | https://git.heroku.com/enigmatic-temple-7361.git
+        Git remote heroku added
+    ```
 3. Create a requirement.txt that helps installtion on heroku by following command 
 
-```
-$ pip freeze > requirements.txt
+    ```
+    $ pip freeze > requirements.txt
 
-```
+    ```
 4. Create a Procfile that helps heroku identify how to start the application 
 
-```
-web: python ./run.py
-```
+    ```
+    web: python ./run.py
+    ```
 5. Now change the ```run.py``` a bit to make it run on heroku. Heroku expects that you use the ``` PORT ``` enviornment variable 
 
-```
-app.run(host='0.0.0.0', port=int(os.environ['PORT']), debug=True)
+    ```
+    app.run(host='0.0.0.0', port=int(os.environ['PORT']), debug=True)
 
-```
+    ```
 6. commit all changes and push the changes to heroku using 
 
-```
-git add Procfile requirments.txt run.py
-git commit -m "add changes to Procfile, requiements.txt"
-git push heroku master
-```
+    ```
+    git add Procfile requirments.txt run.py
+    git commit -m "add changes to Procfile, requiements.txt"
+    git push heroku master
+    ```
 This moves the code to heroku and start the application
 
 7. Now open the application using `heroku open`
 
-```
-heroku open
-```
+    ```
+    heroku open
+    ```
 
 You must see the same output as you have seen earlier.
 
