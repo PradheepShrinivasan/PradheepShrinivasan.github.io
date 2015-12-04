@@ -11,14 +11,22 @@ Now that we have the application up and running in heroku its not time to hook u
 1. create an account in mongolab [site](mongolab.com)
 
 2.  Create a new database by clicking on the newdatabase button. 
+![newdatabase](/images/heroku_mongodb/createNew.png) 
+
 
 3. Select amazon as the provider and single node as we are testing free service as of now.
+![newdatabase](/images/heroku_mongodb/CreatingNewdatabase.png) 
 
 4. Use a unique name for the database.
 
 5. The database must now be displayed in the list of available database as below.Click on the database and enter the menu option
+![creating New user](/images/heroku_mongodb/mongolabLoginScreen.png) 
+
+
 
 6. Create a new user name and password as this is this will be used to connect to database.
+![creating New user](/images/heroku_mongodb/creatingNewUser.png) 
+
 
 7. The usual way to connect to a mongodb server is as below in python using pymongo
 
@@ -39,10 +47,7 @@ database = connection.newblog
 8.Test locally with the actual value of dbuser and dbpassword locally and make sure that the application is working as expected.Now storing the password and login in code is a terrible idea, so we are going to use the heroku enviornment variable option to pass the login name and password.
 
 9.Login to heroku, then go to your app->setting and then select revelConfig and add 2 enviornment variables like below to add your user login credentials.
-
-
-
-
+![config variables](/images/heroku_mongodb/config_variables) 
 
 10. Change the code to get the user name and login also from enviornment variable something like below 
 
@@ -54,7 +59,7 @@ connection_string = "mongodb://"+ db_user + ":" + db_password +"@ds059634.mongol
 database = connection.newblog
 ```
 
-I have hosted the blog [here](https://infinite-shore-9738.herokuapp.com) and you can signup for your own account [here](https://infinite-shore-9738.herokuapp.com/signup) and the entire code can be found [here](https://github.com/PradheepShrinivasan/MongodbBlog)
+I have hosted the blog [here](https://immense-island-1831.herokuapp.com/) and you can signup for your own account [here](https://immense-island-1831.herokuapp.com/signup) and the entire code can be found [here](https://github.com/PradheepShrinivasan/MongodbBlog)
 
 P.S
 
