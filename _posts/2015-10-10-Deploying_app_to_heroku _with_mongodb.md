@@ -107,19 +107,19 @@ In the above example, as the default application used bottle i modified the appl
 
 9. Heroku also needs a Procfile to help it understand how it needs to start the application.
 
-```
-Pradheep (master *) hw4-3 $ cat Procfile 
-web: python ./blog.py 
-```
+    ```
+    Pradheep (master *) hw4-3 $ cat Procfile 
+    web: python ./blog.py 
+    ```
 
 In the above, the * web * specifies that the application needs to accept traffic from outside.
 
 10. The application must also have a * requirements.txt * to specify the files that are needed to deploy the application. 
 
-```
-Pradheep (master *) hw4-3 $ cat requirements.txt 
-bottle
-pymongo
+    ```
+    Pradheep (master *) hw4-3 $ cat requirements.txt 
+    bottle
+    pymongo
 
 ```
 Now push the changes again using git push and look at the heroku logs to see what went wrong and fix it untill the application is running properly. 
