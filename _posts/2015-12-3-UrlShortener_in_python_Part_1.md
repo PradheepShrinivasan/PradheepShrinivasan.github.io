@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating a URL Shortener - Part 1
+title: Creating a URL Shortener with Flask - Part 1
 published: true
 comments: true
 categories : mongodb python flask pymongo
