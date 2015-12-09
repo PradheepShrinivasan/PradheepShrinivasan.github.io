@@ -130,6 +130,7 @@ Now all our configuration , we are getting it from our environment variables, bu
 1. we create a new file called `config.py` which will hold all our configuration in the top level directory.
 
 2. The code structure looks like below 
+    
     ```
         ├── LICENSE
         ├── Procfile
@@ -153,6 +154,7 @@ Now all our configuration , we are getting it from our environment variables, bu
         ├── tmp
 
     ```
+    
 3. In `config.py` we add all configuration to be read from the os environment variable and if not available it would not set a default value as below
 
     ```
@@ -177,9 +179,51 @@ After we have changed the configuration in all the other files where we were doi
 5. Finally we run all the tests again to make sure that nothing is broken
 
     ```
-        python -m uniittest discover
+        python -m unittest discover
+        ...........
+        ----------------------------------------------------------------------
+        Ran 11 tests in 0.077s
+        OK
     ```
 
 ## Merging code to main
 
-1.
+1. Merge the code from `basicURLShortener` to `master`
+
+    ```
+        $ git checkout master
+        Switched to branch 'master'
+        
+        $ git merge basicUrlShorterner 
+        Updating 5c968d2..0f66d0b
+        Fast-forward
+         .travis.yml                     |  25 +++++++++++++++++++++++++
+         app/__init__.py                 |   1 +
+         app/models/Makefile             |   7 +++++++
+         app/models/MongodbHandler.py    |  15 +++++++++++++++
+         app/models/__init__.py          |   0
+         app/models/test_urlShortener.py |  90 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+         app/models/urlshortener.py      |  51 +++++++++++++++++++++++++++++++++++++++++++++++++++
+         app/templates/base.html         |  14 ++++++++++++++
+         app/templates/index.html        |  23 +++++++++++++++++++++++
+         app/views.py                    |  49 ++++++++++++++++++++++++++++++++++++++++++++++++-
+         config.py                       |   6 ++++++
+         requirements.txt                |   5 +++++
+         run.py                          |   4 +++-
+         testing/__init__.py             |   0
+         testing/test_basicsite.py       | 102 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+         15 files changed, 390 insertions(+), 2 deletions(-)
+         create mode 100644 .travis.yml
+         create mode 100644 app/models/Makefile
+         create mode 100644 app/models/MongodbHandler.py
+         create mode 100644 app/models/__init__.py
+         create mode 100644 app/models/test_urlShortener.py
+         create mode 100644 app/models/urlshortener.py
+         create mode 100644 app/templates/base.html
+         create mode 100644 app/templates/index.html
+         create mode 100644 config.py
+         create mode 100644 testing/__init__.py
+         create mode 100644 testing/test_basicsite.py
+        (venv)Pradheep (master) UrlShortener $ 
+
+    ```
