@@ -6,7 +6,7 @@ highlighter:         pygments
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
-relative_permalinks: true
+relative_permalinks: false
 
 # Setup
 title:               Penesive
@@ -15,6 +15,10 @@ description:          This blog will be my notepad of things i learn , new progr
 url:                 http://pradheepshrinivasan.github.io/
 baseurl:             /
 paginate:            3
+
+#gems for pagination
+gems: [jekyll-paginate]
+
 
 # About/contact
 author:

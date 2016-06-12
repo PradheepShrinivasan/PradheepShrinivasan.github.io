@@ -14,6 +14,7 @@ Code coverage is one of the oldest tools available for measuring the amount of t
 
 1. Python support of code coverage is done with a tool called `coverage`. It can be installed as below
 
+
     ```
         pip install coverage
     ```
@@ -107,32 +108,35 @@ Code coverage is one of the oldest tools available for measuring the amount of t
 
 # Improve code Coverage
 
-    Now lets  work on to improve the code coverage to make sure we cover all the cases, by looking at the profile output from the coveralls.
 
-    1. Lets first create a branch to do all the changes related to code coverage improvement.
-        ```
-            git checkout -b improveCode
+Now lets  work on to improve the code coverage to make sure we cover all the cases, by looking at the profile output from the coveralls.
 
-        ```
+1. Lets first create a branch to do all the changes related to code coverage improvement.
 
-    2. The code has no coverage for the case where we try to access a shortURL that is not available. In this case , the url shortener must return 404 not found. So lets add a functional test to improve code coverage in `testing/test_basicsite.py`
-      
-        ```
-            # try to access a invalid shorturl and the code
-            # must return error code 404 not found
-            def test_get_invalidShortUrl(self):
+    ```
+        git checkout -b improveCode
+    ```
 
-                # invalid shortUrl
-                shorturl = self.baseURL + '/' + '112111111'
 
-                rv = self.client.get(shorturl)
+2. The code has no coverage for the case where we try to access a shortURL that is not available. In this case , the url shortener must return 404 not found. So lets add a functional test to improve code coverage in `testing/test_basicsite.py`
+  
+    ```    
+        # try to access a invalid shorturl and the code
+        # must return error code 404 not found
+        def test_get_invalidShortUrl(self):
 
-                self.assertEqual(rv.status_code, 404)
-        ```
+            # invalid shortUrl
+            shorturl = self.baseURL + '/' + '112111111'
 
-    3.  The code has no coverage for case where the model fails to perform operation like save. In case of error trying to create a shortURL ,we should return a back to the index page and with possibly a flash messsage. For time being we will only check if the page returns back to the index.html
+            rv = self.client.get(shorturl)
 
-        ```
+            self.assertEqual(rv.status_code, 404)
+    ```
+
+
+3.  The code has no coverage for case where the model fails to perform operation like save. In case of error trying to create a shortURL ,we should return a back to the index page and with possibly a flash messsage. For time being we will only check if the page returns back to the index.html
+
+    ```
         # the case where we send a request to shorten the url and for
         # whatever reason , the code shortened url is not created
         def test_post_to_urlShortener_fail_in_model(self):
@@ -152,8 +156,8 @@ Code coverage is one of the oldest tools available for measuring the amount of t
 
             #cleanup
             urlshortener.urlShortener.saveUrl = beforepatch
+    ```
 
-        ```
 
 With this we improve the code coverage to 96%. We will stop at this as we have some more code at model level to perform and we will look at improving the coverage more when we make changes.
 
