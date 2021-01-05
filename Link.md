@@ -55,4 +55,4 @@ If you are one of the few who loves how databases work and debunk their claim of
 If you are interested in improving the performance of python , check out this [video](https://www.youtube.com/watch?t=2909&v=OSGv2VnC0go)
 
 # misc
-https://docs.google.com/presentation/d/10ft0zAf2yUMkAL2ZpyUy7EbK0JEmX9dbw6cgYJqNiLk/edit?usp=sharing
+Misc presentation done by me [link](https://docs.google.com/presentation/d/10ft0zAf2yUMkAL2ZpyUy7EbK0JEmX9dbw6cgYJqNiLk/edit?usp=sharing)
