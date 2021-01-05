@@ -173,29 +173,29 @@ In part 5 of this series, i will discuss how i added login support for the url s
             password = PasswordField('Password', validators = [data_required()])
             submit = SubmitField('Login')
             register = SubmitField('register')
-
     ```
 
 
 7. We will add the login at the top of our `index` page, so i will be adding the code to a separate `login.html` as follows
 
     ```
+    {% raw %}
+    
+    <div>
+        <form action= "{{ url_for('login') }}" method="post" >
+            {{ login_form.hidden_tag() }} 
 
-        <div>
-            <form action= "{{ url_for('login') }}" method="post" >
-                {{ login_form.hidden_tag() }}
+            {{ login_form.email }}
+            {{ login_form.password }}
 
-                {{ login_form.email }}
-                {{ login_form.password }}
+            {{ login_form.submit }}
+        </form>
+        <form action= "{{ url_for('register') }}" method="get" ></form>
+            {{ login_form.register }}
+        </form>
+    </div>
 
-                {{ login_form.submit }}
-            </form>
-            <form action= "{{ url_for('register') }}" method="get" ></form>
-                {{ login_form.register }}
-            </form>
-
-        </div>
-
+    {% endraw %}
     ```
 
 
